@@ -2,6 +2,11 @@
 <html>
 <head>
     <title>mi primer web</title>
+    <style>
+        table, th, td {
+            border: 1px solid black;
+        }
+    </style>
 </head>
 <body>
     <h1>Josue Sarmiento</h1>
@@ -27,17 +32,71 @@
     <h1>Yo</h1>
     <br>
     <img src="./yo.jpeg" width="400" >
-    <form action="/formulario" method="post">
+    <form action="/formulario" method="get">
         <label for="Comentarios">Comentarios</label>
-        <input type="text" id="Comentarios" name="Comentarios" placeholder="Solo positivos">
-        <input for="Comentarios" type="submit" placeholder="enviar">
+        <input value="hola" type="text" id="Comentarios" name="Comentarios" placeholder="Solo positivos">
+        <input for="Comentarios" type="submit">
         <br>
         <br>
         <label for="recomendaciones">recomendaciones</label>
         <br>
-        <textarea placeholder="..." cols="50" rows="10" name="recomendaciones" id="recomendaciones"></textarea>
+        <textarea placeholder="..." cols="50" rows="10" name="recomendaciones" id="recomendaciones">hola</textarea>
         <br>
         <input type="submit" name="enviar" id="enviar">
+        <br>
+        <button type="submit">enviar formulario</button>
+        <button type="reset">resetea los valores</button>
+        <button type="button">boton normal</button>
     </form>
+    <!-- ul es lista no ordenada-->
+     <ul>
+        <!-- list item-->
+        <li>quiero desarrollar paginas web</li>
+        <li>quiero tener mucho dinero</li>
+        <li>quiero comprar el carro de mis suenos</li>
+     </ul>
+     <!-- ol es lista ordenada-->
+      <ol>
+        <li>tengo que estudiar </li>
+        <li>tengo que trabajar</li>
+        <li>tengo que innovar</li>
+        <li value="50">ejemplo</li>
+        <li value="100">s</li>
+        <li>
+            <ol>
+                <li style="list-style-type: upper-roman;">ahora en romano</li>
+                <li style="list-style-type: upper-roman;"></li>
+                <li style="list-style-type: upper-roman;"></li>
+                <li style="list-style-type: upper-roman;"></li>
+                <li style="list-style-type: upper-roman;"></li>
+                <li style="list-style-type: upper-roman;"></li>
+            </ol>
+        </li>
+      </ol>
+      <hr>
+      <br>
+      <!--se viene las tablas xd-->
+      <table style="width: 1500px;"> <thead></thead>
+        <thead>
+            <tr>
+                <th>contratenme</th>
+                <th>porque</th>
+            </tr>    
+        </thead>
+        <tbody>
+            <tr>
+                <td>pls</td>
+                <td>soy lindo</td>
+            </tr>
+            <tr>
+                <td>xd--</td>
+                <td>xdnt</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <td>conclusion</td>
+            <td>soy la mejor opcion</td>
+        </tfoot>
+      </table>
 </body>
 </html>
